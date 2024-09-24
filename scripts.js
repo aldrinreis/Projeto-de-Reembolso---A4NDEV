@@ -102,11 +102,13 @@ function expenseAdd(newExpense){
         //Adicionando item na lista
         expenseList.append(expenseItem)
 
+        //Atualiza os Totais
+        updateTotals()
+
         //Limpando o formulário
         formClear()
 
-        //Atualiza os Totais
-        updateTotals()
+
         
     }
     catch(error){
